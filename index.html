@@ -1,0 +1,76 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee drinks</title>
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc;
+            margin: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 25vh;
+        }
+        h1 {
+            color: #6f4e37;
+            text-align: center;
+            width: 400px;
+        }
+        button {
+            font-size: 18px;
+            color: #fff;
+            background-color: #6f4e37;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5b3e2d;
+        }
+        .large-box {
+            width: 400px;
+            height: 200px;
+            background: #fff;
+            border: 2px solid #6f4e37;
+            border-radius: 16px;
+            margin: 24px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .button-row {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 16px;
+            justify-content: center;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coffee drinks</h1>
+    <div class="large-box" id="largeBox">Click a button to display information</div>
+    <div class="button-row">
+        <button id="exampleBtn">First</button>
+        <button id="secondBtn">Second</button>
+        <button id="thirdBtn">Third</button>
+    </div>
+    <script>
+        // JavaScript code
+        const box = document.getElementById('largeBox');
+        document.getElementById('exampleBtn').onclick = function() {
+            box.textContent = 'This is the First coffee drink.';
+        };
+        document.getElementById('secondBtn').onclick = function() {
+            box.textContent = 'This is the Second coffee drink.';
+        };
+        document.getElementById('thirdBtn').onclick = function() {
+            box.textContent = 'This is the Third coffee drink.';
+        };
+    </script>
+</body>
+</html>
+
