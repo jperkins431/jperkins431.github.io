@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Coffee drinks</title>
@@ -54,21 +54,21 @@
     <h1>Coffee drinks</h1>
     <div class="large-box" id="largeBox">Click a button to display information</div>
     <div class="button-row">
-        <button id="exampleBtn">First</button>
-        <button id="secondBtn">Second</button>
-        <button id="thirdBtn">Third</button>
+        <button id="firstBtn">Americano</button>
+        <button id="secondBtn">Cappucino</button>
+        <button id="thirdBtn">Latte</button>
     </div>
     <script>
         // JavaScript code
         const box = document.getElementById('largeBox');
-        document.getElementById('exampleBtn').onclick = function() {
-            box.textContent = 'This is the First coffee drink.';
+        document.getElementById('firstBtn').onclick = function() {
+            box.textContent = 'An Americano is a simple shot of espresso with hot water added to it, creating a rich and bold coffee drink.';
         };
         document.getElementById('secondBtn').onclick = function() {
-            box.textContent = 'This is the Second coffee drink.';
+            box.textContent = 'A Cappuccino is made with equal parts espresso, steamed milk, and frothed milk, creating a creamy and balanced coffee drink.';
         };
         document.getElementById('thirdBtn').onclick = function() {
-            box.textContent = 'This is the Third coffee drink.';
+            box.textContent = 'A Latte is a smooth and creamy coffee drink made with espresso and steamed milk, often topped with a light layer of frothed milk.';
         };
     </script>
 </body>
